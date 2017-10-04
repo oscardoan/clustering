@@ -1,3 +1,6 @@
+#MSSV: 14520178
+#Bai 1
+
 import numpy as np 
 import matplotlib.pyplot as plt
 from scipy.spatial.distance import cdist
