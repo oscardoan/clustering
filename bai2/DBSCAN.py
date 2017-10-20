@@ -1,3 +1,7 @@
+# Apply DBSCAN
+# Author: Doan Tri Duc - 14520178
+# Last Updated: 20/10/2017
+
 print(__doc__)
 
 import numpy as np
@@ -19,11 +23,7 @@ np.random.seed(42)
 digits = load_digits()
 data = scale(digits.data)
 X = PCA(n_components=2).fit_transform(data)
-# labels_true = 10
-# X = StandardScaler().fit_transform(X)
 
-# #############################################################################
-# Compute DBSCAN
 db = DBSCAN(eps=0.3, min_samples=10,algorithm='brute').fit(X)
 core_samples_mask = np.zeros_like(db.labels_, dtype=bool)
 core_samples_mask[db.core_sample_indices_] = True
@@ -32,19 +32,7 @@ labels = db.labels_
 # Number of clusters in labels, ignoring noise if present.
 n_clusters_ = len(set(labels)) - (1 if -1 in labels else 0)
 
-# print('Estimated number of clusters: %d' % n_clusters_)
-# print("Homogeneity: %0.3f" % metrics.homogeneity_score(labels_true, labels))
-# print("Completeness: %0.3f" % metrics.completeness_score(labels_true, labels))
-# print("V-measure: %0.3f" % metrics.v_measure_score(labels_true, labels))
-# print("Adjusted Rand Index: %0.3f"
-#       % metrics.adjusted_rand_score(labels_true, labels))
-# print("Adjusted Mutual Information: %0.3f"
-#       % metrics.adjusted_mutual_info_score(labels_true, labels))
-# print("Silhouette Coefficient: %0.3f"
-#       % metrics.silhouette_score(X, labels))
 
-# #############################################################################
-# Plot result
 import matplotlib.pyplot as plt
 
 # Black removed and is used for noise instead.

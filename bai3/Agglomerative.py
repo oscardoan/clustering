@@ -1,3 +1,6 @@
+# Apply Agglomerative
+# Author: Doan Tri Duc - 14520178
+# Last Updated: 20/10/2017
 from matplotlib import pyplot as plt
 import training_data
 from sklearn.decomposition import PCA

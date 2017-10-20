@@ -1,5 +1,6 @@
-#MSSV: 14520178
-#Bai 1
+# Apply Kmean
+# Author: Doan Tri Duc - 14520178
+# Last Updated: 3/10/2017
 
 import numpy as np 
 import matplotlib.pyplot as plt

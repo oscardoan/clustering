@@ -1,6 +1,6 @@
-#MSSV: 14520178
-#kmean
-
+# Apply Kmean
+# Author: Doan Tri Duc - 14520178
+# Last Updated: 20/10/2017
 print(__doc__)
 
 from time import time

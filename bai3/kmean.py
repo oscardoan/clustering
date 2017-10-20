@@ -1,4 +1,8 @@
-#Kmean
+# Apply Kmean
+# Author: Doan Tri Duc - 14520178
+# Last Updated: 20/10/2017
+
+
 import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
 from sklearn.decomposition import PCA
